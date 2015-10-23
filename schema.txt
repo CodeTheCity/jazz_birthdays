@@ -1,0 +1,21 @@
+Musician Record
+
+Forename
+Surname
+Middle_name #or nickname
+Instruments
+	list them
+Day of birth
+Month of Birth
+Year of Birth
+
+(can be blank)
+Day of Death
+Month of Death
+Year of Death
+
+Comments
+Links
+	Dicography
+	Wikipedia aricle
+
