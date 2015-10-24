@@ -1,0 +1,42 @@
+<musicians>
+<musician>
+<fname>Holly</fname>
+<mname></mname>
+<lname>Cole</lname>
+<dob>1963-01-01</dob>
+<dod></dod>
+<instruments>vocal,piano</instruments>
+</musician>
+<musician>
+<fname>Dick</fname>
+<mname></mname>
+<lname>Charlesworth</lname>
+<dob>1932-01-08</dob>
+<dod>2008-04-15</dod>
+<instruments>clarinet, vocal</instruments>
+</musician>
+<musician>
+<fname>Ronald</fname>
+<mname>Shannon</mname>
+<lname>Jackson</lname>
+<dob>1940-01-12</dob>
+<dod>2013-10-19</dod>
+<instruments>drums</instruments>
+</musician>
+<musician>
+<fname>Ian</fname>
+<mname></mname>
+<lname>Watt</lname>
+<dob>1962-10-25</dob>
+<dod></dod>
+<instruments>tenor sax, flute, spoons</instruments>
+</musician>
+<musician>
+<fname>Milne</fname>
+<mname>Lofty</mname>
+<lname>Steven</lname>
+<dob>1945-09-14</dob>
+<dod></dod>
+<instruments>Comb and paper</instruments>
+</musician>
+</musicians>

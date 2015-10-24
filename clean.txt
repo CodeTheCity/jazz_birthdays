@@ -1,0 +1,69 @@
+Brandt	Helmut		1931-01-01	 baritone sax	2001-7-26
+Celestin	Oscar	"Papa"	1884-01-01	 trumpet, leader	1954-12-15
+Chizhik	Leonid		1947-01-01	 piano	
+Cole	Holly		1963-01-01	 vocal, piano	
+DaGradi	Tony		1953-01-01	 tenor sax	
+Dickie	Neville		1937-01-01	 piano	
+Foster	Teddy		1908-01-01	 trumpet, vocal	1984-1-5
+Gonzales	Andy		1951-01-01	 bass, electric bass, perc, arranger	
+Greenwich	Sonny		1936-01-01	 guitar	
+Hayashi	Eiichi		1960-01-01	 alto sax	
+Ikeda	Yoshio		1942-01-01	 bass	
+Jackson	Milt		1923-01-01	 vibraphone, piano, guitar	1999-10-9
+Johnson	Howard		1908-01-01	 alto sax	1991-12-28
+Leimgruber	Urs		1952-01-01	 saxophones, bass clarinet	
+McCorkle	Susannah		1946-01-01	 vocals	2001-5-19
+McKibbon	Al		1919-01-01	 bass	2005-7-29
+Oquendo	Manny		1931-01-01	 percussion	2009-3-25
+Parker	Brian		1934-01-01	 broadcaster	
+Pfeiler	T	.C	1958-01-01	 organ	
+Potter	Chris		1971-01-01	 alto and tenor saxes	
+Taylor	Jasper		1894-01-01	 drums, washboard	1964-11-7
+Toney	Kevin		1953-01-01	 keyboards	
+Rooyen	Ack	Van	1930-01-01	 trumpet, flugelhorn	
+Dupont	Ann		1915-01-02	 clarinet, leader	
+Falson	Ron		1928-01-02	 trumpet, arranger	2008-7-6
+Fatool	Nick		1915-01-02	 drums	2000-9-26
+Goodwin	Henry		1910-01-02	 trumpet	1979-7-2
+Laine	Bob		1910-01-02	 piano	1997-12-30
+McLevy	John		1927-01-02	 trumpet	2002-11-27
+Palmer	Clarence		1919-01-02	 vocal	
+Proctor	Judd		1933-01-02	 guitar, mandolin, vocals	
+Prysock	Arthur		1929-01-02	 vocal	1997-6-21
+Suzuki	Isao		1933-01-02	 bass	
+Andrews	Maxene		1916-01-03	 vocal	1995-10-21
+Belletto	Al		1928-01-03	 alto saxophone	
+Berglund	Ginger		1954-01-03	 vocals	
+Carter	James		1969-01-03	 saxophones, bass clarinet	
+Haider	Joe		1936-01-03	 piano	
+Hollyday	Christopher		1970-01-03	 alto sax	
+Hunter-Randall	Ian		1938-01-03	 trumpet	1999-2-13
+Jackson	Preston		1902-01-03	 trombone	1983-11-12
+Jenkins	John		1931-01-03	 alto sax	1993-7-12
+	Musa	Kaleem	1921-01-03	 tenor saxophone, flute	1988-3-26
+Kerr	Trudy		1963-01-03	 vocal, arranger	
+Minerve	Harold	"Geezil"	1922-01-03	 alto sax, flute	1992-6-4
+Neumann	Roger		1941-01-03	 reeds, leader	
+Nichols	Herbie		1919-01-03	 piano, composer	1963-4-12
+Rich	Fred		1898-01-03	 leader, pianist	1956-9-8
+Smith	Brian		1939-01-03	 saxophone flute	
+Standifer	Floyd		1929-01-03	 trumpet, flugelhorn, tenor sax, vocal	2007-1-22
+Baker	Norman	"Buddy"	1918-01-04	 composer, arranger, trombone, euphonium	2002-7-26
+Bell	Roger		1919-01-04	 trumpet, cornet, clarinet, washboard, drums, vocal, composer, leader	2008-6-17
+Chadbourne	Eugene		1954-01-04	 guitar, banjo, harmonica, vocals	
+Cline	Alex		1956-01-04	 drums, composer	
+Cline	Nels		1956-01-04	 guitar	
+Dick	Robert		1950-01-04	 composer, flute	
+Dreares	Al		1929-01-04	 drums	
+Gibbons	Carroll		1903-01-04	 leader, piano, conductor	1954-5-10
+Hitchcock	Nigel		1971-01-04	 alto sax	
+James	Ken		1944-01-04	 alto/tenor/soprano saxes, flute, percussion, leader	2012-4-april
+Lee	David		1941-01-04	 drums	
+Lipton	Sydney		1904-01-04	 violin, leader	1995-7-19
+Littlejohn	Alan		1929-01-04	 trumpet	1995-11-12
+McLaughlin	John		1942-01-04	 guitar	
+Nettelbeck	Ted		1936-01-04	 piano	
+Newman	Lionel		1916-01-04	 arranger/composer	1989-2-3
+Newton	Frankie		1906-01-04	 trumpet	1954-3-11
+Rose	Boris		1918-01-04	 producer, engineer	2000-12-31
+Smetacek	Pavel		1940-01-04	 clarinet, alto and soprano sax, arranger, tuba, leader	
