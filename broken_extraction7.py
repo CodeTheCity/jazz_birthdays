@@ -4,7 +4,7 @@ import xml.etree.ElementTree as etree
 import re
 import datetime
 
-input_file = "jazz_birthdays_manual_tidy2.xml"
+input_file = "jazz_birthdays_manual_tidy.xml"
 #set the output file name for the 'good' data
 #needs to be to a structured format - but dump to text for now
 #clean_output = 'clean_out.csv'
@@ -26,7 +26,9 @@ ref = ("january", "february", "march", "april", "may", "june", "july", "august",
 #initialise integer values for month and day
 birth_day = 0
 birth_month = 0
+death_status = False
 deceased = False
+
 # First function: cleans out (invisible) ascii chars 132 and 160 from some lines which was causing problems
 def remove_non_ascii_1(text): 
     return ''.join(i for i in text if ord(i)<128) #we need no characters below this normal pronting range
@@ -105,35 +107,39 @@ def date_comp(dc):
             return ref.index(month) + 1
 
 def find_death(line):
+    d_status = False
+
     line = line.strip()
     list1 = line.split(',')
     try:
         int_year = int(list1[1])
-        #print(int_year)
+
+        list1[0] = list1[0].replace(".", " ")
+        d_m = list1[0].split(" ")
+        d_m[0] = d_m[0].replace(".","").lower()
+        int_month = date_comp(d_m[0])
+
+        if int_month <10:
+        	month = "0"+str(int_month)
+        else:
+	    	month = str(int_month)
+	    
+        int_day = d_m[-1]
+
+        if int_day < 10:
+	    	day = "0"+str(int_day)
+        else:
+	    	day = str(int_day)
+        d_status = True
+        return d_status, str(int_year) + "-" + month + "-" + day
+
     except:
-        pass
+        d_status = False
+        return d_status, ""
     
-    #print list[0]
-    list1[0] = list1[0].replace(".", " ")   
-    #print list[0] 
-    d_m = list1[0].split(" ")
-    d_m[0] = d_m[0].replace(".","").lower()
 
-    int_month = date_comp(d_m[0])
 
-    if int_month <10:
-    	month = "0"+str(int_month)
-    else:
-    	month = str(int_month)
     
-    int_day = d_m[-1]
-
-    if int_day < 10:
-    	day = "0"+str(int_day)
-    else:
-    	day = str(int_day)
-
-    return str(int_year) + "-" + month + "-" + day
 
 
 ##################################
@@ -214,33 +220,52 @@ for child in root:
 						#dod = create_death_date (death_text)
 						if deceased:
 							print death_text
-							
-							#don't call the find_death function for now.
-							#dod = find_death (death_text)
+							dod = find_death (death_text)
 
+                        if not deceased:
+                            f2.write ("<musician>"+ "\n")
+                            f2.write ("<fname>"+ muso_parts[0] + "</fname>" + "\n")
+                            if muso_parts[1] != "":
+                            	f2.write ("<mname>"+ muso_parts[1] + "</mname>" + "\n")
+                            f2.write ("<lname>"+ muso_parts[2] + "</lname>" + "\n")
+                            f2.write ("<dob>"+ str(dob) + "</dob>" + "\n")
+                            f2.write("<instruments>")
+                            count = 0
+                            ins_len = len(muso_parts[4])
+                            for inst in muso_parts [4]:
+                            	f2.write (inst.strip())
+                            	count +=1
+                            	if count < ins_len:
+                            		f2.write(",")
+                            f2.write("</instruments>" + "\n")
+                            f2.write("</musician>"+ "\n")
 
-						f2.write ("<musician>"+ "\n")
-						f2.write ("<fname>"+ muso_parts[0] + "</fname>" + "\n")
-						if muso_parts[1] != "":
-							f2.write ("<mname>"+ muso_parts[1] + "</mname>" + "\n")
-						f2.write ("<lname>"+ muso_parts[2] + "</lname>" + "\n")
-						f2.write ("<dob>"+ str(dob) + "</dob>" + "\n")
-						# if dod != "":
-						    #f2.write ("<dod>"+ dod + "</dod>" + "\n")
-						 #   f2.write ("<dod")
-                        if deceased:
-                        	f2.write ("<deceased>True</deceased>")
-                        f2.write("<instruments>")
-                        count = 0
-                        ins_len = len(muso_parts[4])
-                        for inst in muso_parts [4]:
-						    f2.write (inst.strip())
-						    count +=1
-						    if count < ins_len:
-						        f2.write(",")
-                        f2.write("</instruments>" + "\n")
-                        f2.write("</musician>"+ "\n")
+                        else:
+                        	# deceased person
 
+	                        if death_status == True:
+								f2.write ("<musician>"+ "\n")
+								f2.write ("<fname>"+ muso_parts[0] + "</fname>" + "\n")
+								if muso_parts[1] != "":
+									f2.write ("<mname>"+ muso_parts[1] + "</mname>" + "\n")
+								f2.write ("<lname>"+ muso_parts[2] + "</lname>" + "\n")
+								f2.write ("<dob>"+ str(dob) + "</dob>" + "\n")
+								if dod != "":
+								    f2.write ("<dod>"+ dod + "</dod>" + "\n")
+								f2.write("<instruments>")
+								count = 0
+								ins_len = len(muso_parts[4])
+								for inst in muso_parts [4]:
+								    f2.write (inst.strip())
+								    count +=1
+								    if count < ins_len:
+								        f2.write(",")
+								f2.write("</instruments>" + "\n")
+								f2.write("</musician>"+ "\n")
+	                        else:
+	                        	# death split didn't work
+	                            f3.write(str(birth_day) + " " + str(birth_month) +"\n")
+	                            f3.write(line_text +"\n")
 
 
 					#f2.write("\n")
