@@ -35,3 +35,5 @@ We spent a few hours working on the dead musicians to try to get the death dates
 We gave up and created process_the_dead.py which takes as input the output of first script, and allows any old text for death dates and writes that out as strings to DOD field.
 
 We still have some queries in dirty_out2.xml which contain anomalies and "or" records where there are alternative dates for birth or death.
+
+Sean Reilly has created a repo for the PHP / MySQL which he was working on [here](https://github.com/Surreily/CTC5-Jazz-Database)
