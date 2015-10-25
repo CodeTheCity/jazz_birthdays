@@ -24,3 +24,13 @@ Removed a couple of empty year tags amongst Youtube line (e.g. <2012> )
 The programme choked on "Paul Ruhland, bass, arranger, leader, 1930 (d. July, 2013)") under 29 Feb - since 1930 was not a leap year.
 
 Manually fixed around 35 malformed death dates where commas used instead of "." e.g Ruby Braff, Glenn Miller
+
+=============================================================================
+
+Around version 7 of the extraction file got it working well enough to output all non-dead musicians out to XML which imported into the database.
+
+We spent a few hours working on the dead musicians to try to get the death dates formatted correctly. 
+
+We gave up and created process_the_dead.py which takes as input the output of first script, and allows any old text for death dates and writes that out as strings to DOD field.
+
+We still have some queries in dirty_out2.xml which contain anomalies and "or" records where there are alternative dates for birth or death.
